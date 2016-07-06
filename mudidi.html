@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">	
+		<meta name="format-detection" content="telephone=no"/>
+		<meta name="format-detection" content="email=no"/>
+		<title>目的地</title>
+		<link rel="stylesheet" href="css/mudidi.css">		 
+		<link rel="stylesheet" href="./Swiper demo_files/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+       
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .tupianlunbo{
+    	 width: 100%;
+        height: 9.5rem;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 9.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        overflow: hidden;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-slide img{
+        width: 100%;
+        height:auto;
+    }
+    .swiper-pagination{
+    	position: absolute;
+    	right: 1rem;
+    	bottom: -2rem;
+    }
+     
+    .lianxi{
+    	width: 80%;
+    	height: 7.6rem;
+    	position: fixed;
+    	left: 10%;
+    	top:40%;
+    	background:#ffffff;
+    	display: block;
+    	z-index: 30;
+    	-webkit-transform: scale(0,0);
+    }
+    .lianxi ul li{
+    	font-family: "微软雅黑";
+        
+    }
+    .li1{
+    	width: 100%;
+    	height: 2.8rem;
+    	background: #15BB6F;
+    	color: #fff;
+    	line-height: 2.8rem;
+    	padding-left: 1rem;
+    }
+    .li2{
+    	width: 100%;
+    	height: 2.8rem;
+    	 
+    	line-height: 2.8rem;
+    	padding-left: 1rem;
+    	
+    	
+    }
+    .li3{
+    	width: 100%;
+    	height: 2rem;   	
+    }
+    .li3 p{
+    	width:50%;
+    	float: left;
+    	text-align: center;
+    	line-height: 2rem;
+    	
+    }
+    .pp{
+    	color: #15BB6F;
+    	border-left: 1px solid #ccc;
+    	 
+    }
+    </style>
+	</head>
+	
+	<body>
+		<div class="zijiayouWrap">
+			
+		<div class="lianxi">
+		  	<ul>
+		  		<li class="li1">联系我们</li>
+		  		<li class="li2">春秋客服热线：400-820-6222</li>
+		  		<li class="li3"><p id="quxiao">取消</p><p class="pp">拨打</p></li>
+		  	</ul>
+		</div>
+		<div class="headerFixed">
+		<header class="ZJYheader">
+				<div class="Lheader">
+					<a href="#"><img src="pic/xuanzechengshi/images/469604386592710957_03.png" /></a>
+					<p class="XZCity"></p>
+				</div>
+	            <div class="Rheader">
+	            	<a href="zijiaSousuo.html"><img src="pic/xuanzechengshi/images/469604386592710957_05.png" /></a>
+					<img src="pic/xuanzechengshi/images/469604386592710957_07.png" id="dianhua">
+			    </div>
+		 </header>	
+		 </div>
+		 <div class="tupianlunbo">
+			<div class="swiper-container">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide"><img src="img/11.png"></div>
+			            <div class="swiper-slide"><img src="img/22.png"></div>		                    
+			        </div>
+			        <!-- 内容下面跟着走的小点或则数字 -->
+			        <div class="swiper-pagination"></div>
+	         </div>
+         </div>     
+             <div class="remenmudidi">             	
+             	<h3>热门目的地</h3>            	
+             	<div class="pics">
+             		<img src="pic/mudidi/images/m_04.png">
+	                <img src="pic/mudidi/images/m_04.png"/>
+	                <img src="pic/mudidi/images/m_06.png"/>
+	                <img src="pic/mudidi/images/m_07.png">
+	                <img src="pic/mudidi/images/m_08.png"/>
+             	</div>
+             </div> 
+              
+            <div class="xiaoPic">
+                <h3>推荐主题</h3>            	
+             	<div class="Xiaopics">
+             		<img src="pic/mudidi/images/m1_03.png">
+	                <img src="pic/mudidi/images/m1_05.png"/>
+	                <img src="pic/mudidi/images/m1_07.png"/>
+	                <img src="pic/mudidi/images/m1_12.png">
+	                <img src="pic/mudidi/images/m1_13.png"/>
+	                <img src="pic/mudidi/images/m1_14.png"/>
+	                <img src="pic/mudidi/images/m1_18.png"/>
+	                <img src="pic/mudidi/images/m1_19.png"/>
+	                <img src="pic/mudidi/images/m1_20.png"/>	               
+             	</div>                         
+            </div>           
+        
+		 		
+	</div>	
+		
+	<!--<script src="js/iscroll4.js"></script>-->
+	<script src="js/zepto.min.js"></script>
+	<script src="./Swiper demo_files/swiper.min.js"></script>
+   
+    <script> 
+     var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: false,
+        spaceBetween:0,
+        loop: true,
+        centeredSlides: true,
+	    autoplay:3000,
+	    autoplayDisableOnInteraction: false
+
+    });
+       function remSet(){
+			var width = 750/2;
+			var rem = $(window).width()/width * 10;
+			$( "html" ).css({
+				"font-size": rem
+			})
+		} 
+		remSet();
+		$( window ).resize(function(){
+			remSet();
+		})
+		
+	/* setTimeout(function(){
+	 	var listPage=new iScroll("gundong",{
+	  	onBeforeScrollStart:function(e){var tagName=e.target.nodeName.toLowerCase();
+	  		if(tagName!="input" && tagName!="select" && tagName!="textarea")
+	  			e.preventDefault();
+          }
+	    });
+	 	
+	 },200)*/
+    	
+     $.ajax({
+		   url:"js/mudidi.json",
+		    type:"GET",
+		    dataType:"json",
+		    async:true,
+		    success:function(data){
+			 readerSheader(data)  ; 
+			 readerBoxs(data);
+		  }
+		})
+   
+  function readerSheader (data){
+    	 $(".XZCity").html(data.XZCity)
+    	 $(".jijieh").html(data.jijieh)
+    	 $(".taqing").html(data.citys[0]);
+    	 $(".ningbo").html(data.citys[1]);
+    	 $(".qianhudao").html(data.citys[2]);
+         $(".caizhai").html(data.citys[3]);
+         $(".tianmuhu").html(data.citys[4]);
+         $(".konglongyuan").html(data.citys[5]);
+         $(".qinzi").html(data.citys[6]);
+         $(".zijiayouwanzi").html(data.zijiayouwanzi)         
+    }
+   function readerBoxs(data){
+   	 
+   	var html="";
+   	$.each(data.zijiyouBoxs, function(i,k) {
+   		 
+   		html+='<div class="ziyouxing">'+
+					'<img src="pic/xuanzechengshi/images/'+k.pic_url1+'" class="pic1"/>'+
+					'<div class="ZYXwenzi">'+
+						'<p class="ZYwenzi">'+k.ZYwenzi+'</p>'+
+						'<span class="jieshao">'+k.jieshao+'</span>'+
+					'</div>'+
+					'<div class="ZYXweizhi">'+
+						'<img src="pic/xuanzechengshi/images/'+k.pic_url2+'" class="pic2"/>'+
+						'<p class="ningboWenzi">'+k.ningboWenzi+'</p>'+
+					'</div>'+
+				'</div>'
+   	});
+   	$(".ZJboxs").html(html);
+   }
+     
+    $(".zijiayouWrap").scroll(function(){
+     var  	top=$(".zijiayouWrap").scrollTop();
+             console.log(top);
+     var    headerH=$(".headerFixed").height();
+      
+      if(top>=headerH){
+      	 $(".headerFixed").css({
+   	   	  "position":"fixed",
+   	   	  "left":"0",
+   	   	  "top":"0"
+   	   })
+      }else{
+      	 $(".headerFixed").css({
+   	   	  "position":"relative"  	   	
+   	   })
+      }
+    
+    
+   })
+      
+     </script>  
+	</body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">	
+		<meta name="format-detection" content="telephone=no"/>
+		<meta name="format-detection" content="email=no"/>
+		<title>采摘</title>
+	</head>	
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body,.taqingWrap{
+			width: 100%;
+			height: 100%;
+		}
+		 
+		.taqingWrap::-webkit-scrollbar-track-piece{background: yellow;}
+		 
+		ul li{
+			list-style: none;
+		}
+		.taqingWrap{
+			
+			width: 100%;
+			height: 100%;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			 background: #f7fcf6;
+			 overflow-x: hidden;
+			
+		}
+		.ZJYheader{
+			width: 100%;
+			height: 3rem;
+			background: #1abc73;
+			position: relative;
+		}
+		 
+		.XZheader {
+			  width: 100%;
+			  height: 3rem;
+			  position: relative;
+			  margin-top: .5rem;
+			 
+			}
+			.XZheader {
+			  width: 100%;
+			  height: 3rem;
+			  position: relative;
+			  margin-top: .5rem;
+			}
+			.Lheader {
+			  position: absolute;
+			  left: 0;
+			  top: 0;
+			  position: relative;
+			}
+			.cneter{
+				width: 80%;
+				height: 3rem;
+				text-align: center;
+				margin: 0 auto;
+			}
+			.cneter p {
+				width: 63%;
+			  position: absolute;
+			  left: 4rem;
+			  top: .3rem;
+			  color: #fff;
+			  font-size: 2rem;
+			  line-height: 2.5rem;
+			  font-family: "微软雅黑";
+			  text-align: center;
+			}
+			.Lheader img {
+			  margin-top: .5rem;
+			}
+			.Rheader { 
+			  margin-top: .5rem;
+			  position: absolute;
+			  right: .5rem;
+			  top: 0;
+			  font-family: "微软雅黑";
+			}
+			.nav{
+				width: 100%;
+				height: 3.5rem;
+                border-bottom: 1px solid #CCCCCC;
+                 position: relative;
+                 background: #F0F0F0;
+                 z-index: 20;
+			}
+			.nav ul li{
+				 font-size: 1.3rem;
+				 float: left;
+                 font-family: "微软雅黑";
+                 width: 20%;
+                 line-height: 3.5rem;
+                 text-align: center;                
+			}
+			.leftBox img{
+				width: 9rem;
+				height: 5.5rem;
+			}
+			.section{
+				-webkit-box-flex: 1; 
+				margin-top: .75rem;				
+				box-sizing: border-box;
+				display: -webkit-box;							 
+			}
+			.box{
+				width: 100%;
+				height: 6.5rem;
+				display: -webkit-flex;
+				margin-top: 1rem;
+			}
+			.leftBox{
+				float:left;
+			    width: 10rem;
+			}
+			.rightBox{
+				-webkit-flex-grow: 1;
+				margin-left: 1.5rem;
+				position: relative;
+				height: 100%;
+				border-bottom: 1px solid #CCCCCC;
+			}
+			.rightBox b{
+				position: absolute;
+                right: 1rem;
+                bottom: 1rem;
+                color: #bababa;
+			}
+			.rightBox b span{
+				color: #d84f57;
+				font-size:1.5rem;
+				font-family: "微软雅黑";
+			}
+			.botBom{
+				position: absolute;
+				left: 0;
+				bottom: 1px;
+				width: 20%;
+				height: 1px;
+				border-bottom: 2px solid red;
+			}
+			.boxs{
+				width: 100%;
+				height: 100%;
+			    display: block;
+			}
+			.nav ul li.on{
+				color: red;
+				
+			}
+			.footer{
+				width: 100%;
+				height: 5rem;
+				background: #000;
+				opacity: .5;
+				color: #fff;
+				display: -webkit-box;
+				position: fixed;
+				left: 0;
+				bottom: 0;
+			}
+			.footer div{
+				-webkit-box-flex:1;
+				position: relative;
+			}
+			.footer div img{
+				width: 4rem;
+				height: 3rem; 
+				position: absolute;
+				left:50%;
+				top:0;
+				margin-left: -2rem; 
+			 }
+			 .footer div p{
+				text-align: center;
+				line-height: 5rem;
+				padding-top: 1rem;
+				font-size: 1.7rem;
+				font-family: "微软雅黑";
+			}
+					 
+#scroll-1 {
+        width:100%;
+        height:100%;
+        overflow:auto;
+        overflow-x: hidden;
+    }
+    
+    #scroll-1::-webkit-scrollbar {
+        width:0px;
+        height:0px;
+    }
+    #scroll-1::-webkit-scrollbar-button    {
+       
+    }
+    #scroll-1::-webkit-scrollbar-track     {
+        background:transparent;
+    }
+    #scroll-1::-webkit-scrollbar-track-piece {
+    
+        background:url(http://www.lyblog.net/wp/wp-content/themes/mine/img/stripes_tiny_08.png);
+    }
+    #scroll-1::-webkit-scrollbar-thumb{
+    	
+        background:transparent;
+        border-radius:4px;
+       
+    }
+    #scroll-1::-webkit-scrollbar-corner {
+    
+        background:#82AFFF;
+    }
+    #scroll-1::-webkit-scrollbar-resizer  {
+    	
+        background:#FF0BEE;
+    }
+			 
+	</style>
+	<body>
+		
+		<div class="taqingWrap" id="scroll-1">
+			
+			<header class="ZJYheader">
+				<div class="Lheader">
+					<a href="zijiayou.html"><img src="pic/xuanzechengshi/images/taqing_03.png" /></a>
+					 
+				</div>
+				<div class="cneter">
+					<p class="taqingbiaoti"></p>
+                </div>
+	            <div class="Rheader">
+	            	<a href="zijiaSousuo.html"><img src="pic/xuanzechengshi/images/taqing_05.png" /></a>
+					
+			    </div>
+		    </header>
+		    
+			<div class="nav">
+				<ul>
+					<!--<li class="on">全部</li>
+					<li>跟团游</li>
+					<li>自由行</li>-->
+				</ul>
+				<div class="botBom"></div>
+			</div>
+			
+			<div class="section">
+				
+			   <div class="boxs">
+				   
+				   	
+			    </div>
+			   
+			    <div class="boxs">2222222</div>
+			    <div class="boxs">3333333333333</div>
+			
+			</div>
+			
+			<div class="footer">
+				<div class="footerL"><p>排序方式</p><img src="pic/taqing/images/taqing_21.png"></div>
+				<div class="footerL"><p>更多筛选</p><img src="pic/taqing/images/taqing_23.png"></div>
+			</div>
+			
+		</div>
+		
+	 
+		<script src="js/zepto.min.js"></script>
+		<script>
+		 function remSet(){
+			var width = 750/2;
+			var rem = $(window).width()/width * 10;
+			$( "html" ).css({
+				"font-size": rem
+			})
+		} 
+		remSet();
+		$( window ).resize(function(){
+			remSet();
+		})
+		
+		var jieguo=window.location.search;
+		var  arr=jieguo.split("=");
+		var   _url=window.location.pathname;
+	    var hanzi=window.decodeURIComponent(arr[1]);
+	    
+	   
+	     if($(".taqingbiaoti").html("undefined")){
+	    	$(".taqingbiaoti").html("采摘");
+	    	 
+	    }else{
+	    	 $(".taqingbiaoti").html(hanzi) 
+	    } 
+				
+		$(".nav ul").on("click","li",function(){
+			var index=$(this).index();
+			$(this).addClass("on").siblings().removeClass("on");
+		    var Lbaifen=index*20+"%";
+		     var Sbaifen=-(index*100)+"%";
+		    $(".botBom").css({
+		    	"left":Lbaifen,
+		    	"-webkit-transition":"left .3s ease-in"
+		    })		    
+			 $(".section").css({
+		    	"-webkit-transform": "translate("+Sbaifen+",0)",
+		    	"-webkit-transition":"transform .3s ease-in"
+		  })			 
+		})
+		
+		$.ajax({
+			"url":"js/zijiayou.json",
+			"type":"get",
+			"dataType":"json",
+			success:function(data){
+				readerBoxs(data);
+			}						
+		})
+		
+		function readerBoxs(data){
+			var html="";
+			var  htmlNav="";
+			$.each(data.caizhai.nav,function(i,k){
+				htmlNav+='<li>'+k+'</li>'
+				 			
+			})
+			
+			
+			$(".nav ul").html(htmlNav);
+			$.each(data.caizhai.box, function(i,k) {
+				 
+				html+=' <div class="box">'+				
+				   		'<div class="leftBox">'+
+				   			'<img src="pic/taqing/images/'+k.leftBoxPic+'" />'+
+				   		'</div>'+
+				   		'<div class="rightBox">'+				   			  
+				   			  ' <p>'+k.rightBoxP+'</p>'+
+				   			  ' <b><span><small>'+k.bSmallWenzi+'</small>'+k.bSpanWenzi+'</span>'+k.bWenzi+'</b>'+				   			
+				   		'</div>'+
+			    '</div>'
+				
+			});
+			
+			$(".boxs").html(html)
+		}
+		
+		
+		 
+		
+		$(".taqingWrap").scroll(function ()
+				{
+				
+				var st = $(this).scrollTop();
+				 console.log(st);
+				 
+				if(st>36){
+					$(".nav").css({
+						"position":"fixed",
+						"left":"0",
+						"top":"0"
+						})
+				}else{
+					$(".nav").css({
+						"position":"relative"						
+						})
+				}								
+				 
+         });
+         
+         $(".taqingWrap").swipeDown(function(){
+         	$(".footer").css({
+         		"bottom":"0rem",
+         		"-webkit-transition":"bottom .5s ease-in"
+         	})
+         })
+         
+          $(".taqingWrap").swipeUp(function(){
+         	$(".footer").css({
+         		"bottom":"-3rem",
+         		"-webkit-transition":"bottom .5s ease-in"
+         	})         	
+         })
+          
+		</script>
+	</body>
+</html>
